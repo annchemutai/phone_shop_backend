@@ -6,6 +6,7 @@ use App\Http\Controllers\RolesController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AuthController;
 
 //Public Routes
 Route::post('register', [AuthController::class, 'register']);

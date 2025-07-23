@@ -118,7 +118,7 @@ class OrdersController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Orders $orders)
+    public function destroy(Orders $orders, $id)
     {
         try {
             $order = Orders::findOrFail($id);
