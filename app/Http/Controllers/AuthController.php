@@ -56,12 +56,12 @@ class AuthController extends Controller
             }
 
             $token = $user->createToken('auth-token')->plainTextToken;
-// return $token;
+
             return response()->json([
                 'message' => 'Login Successful!',
                 'user' => $user,
                 'token' => $token,
-                'abilities'=>$user->abilities()
+                // 'abilities'=>$user->abilities()
             ], 201);
         } catch (\Exception $exception) {
             return response()->json([
